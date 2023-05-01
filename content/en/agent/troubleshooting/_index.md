@@ -31,6 +31,7 @@ further_reading:
   text: "High CPU or memory consumption"
 cascade:
     algolia:
+        category: Agent
         subcategory: Troubleshooting
 ---
 
