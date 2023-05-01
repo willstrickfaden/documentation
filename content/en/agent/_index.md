@@ -25,6 +25,9 @@ aliases:
   - /agent/faq/the-datadog-agent-for-logs-or-traces-only
 algolia:
   tags: ['agent']
+cascade:
+    algolia:
+        category: Agent
 ---
 
 <div class="alert alert-info">

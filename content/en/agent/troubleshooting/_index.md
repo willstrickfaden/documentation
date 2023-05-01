@@ -29,6 +29,9 @@ further_reading:
 - link: "/agent/troubleshooting/high_memory_usage/"
   tag: "Documentation"
   text: "High CPU or memory consumption"
+cascade:
+    algolia:
+        subcategory: Troubleshooting
 ---
 
 If you have not yet installed the Datadog Agent, go [to the dedicated Agent integration page][1] for installation instructions. If you just installed the Agent, it may take a few moments before you start seeing metrics appear. The first place you should check for metrics is the [Metrics Explorer][2].
