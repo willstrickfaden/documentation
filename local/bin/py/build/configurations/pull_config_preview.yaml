@@ -65,7 +65,7 @@
         contents:
 
         - action: integrations
-          branch: prod
+          branch: bryce/add-further-reading-link
           globs:
           - integration/*/*_metadata.csv
           - integration/*/manifest.json
