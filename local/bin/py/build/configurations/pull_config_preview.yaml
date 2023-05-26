@@ -65,7 +65,7 @@
         contents:
 
         - action: integrations
-          branch: prod
+          branch: bryce/reorganize-azure-doc
           globs:
           - integration/*/*_metadata.csv
           - integration/*/manifest.json
