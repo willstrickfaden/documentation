@@ -36,7 +36,7 @@ const renderHits = (renderOptions, isFirstRender) => {
         return hitsArray
             .map((item) => {
                 const hit = getHitData(item);
-                const displayContent = truncateContent(hit.content, 100);
+                const displayContent = truncateContent(hit.content_snippet_match_level === "full" ? hit.content_snippet : hit.content, 100);
                 const cleanRelpermalink = `${basePathName}${hit.relpermalink}`.replace('//', '/');
 
                 return `
