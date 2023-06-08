@@ -16,6 +16,8 @@ further_reading:
 - link: "https://www.datadoghq.com/blog/datadog-github-deployment-protection-rules/"
   tag: "Blog"
   text: "Detect failed quality checks with GitHub Deployment Protection Rules and Datadog"
+algolia:
+  tags: ['monitor types']
 ---
 
 {{< whatsnext desc="Choose your monitor type:">}}

@@ -24,6 +24,8 @@ further_reading:
   - link: "https://dtdg.co/fe"
     tag: "Foundation Enablement"
     text: "Join an interactive session on creating effective monitors"
+algolia:
+  tags: ['monitors']
 cascade:
     algolia:
         rank: 70
