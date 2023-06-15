@@ -35,7 +35,6 @@ If you have not set up the Roku SDK yet, follow the [in-app setup instructions][
 
 1. Add the latest version of the [RUM Roku SDK][4] to your ROPM dependencies (or download the zip archive).
 2. Configure your application's `env` when [initializing the SDK][5].
-3. Run the Gradle task to upload your Proguard/R8 mapping file to Datadog in order to access deobfuscated stack traces. 
 
 For any given error, you can access the file path, line number, and a code snippet for each frame of the related stack trace.
 
