@@ -1230,7 +1230,7 @@ main:
     pre: mobile
     parent: service_management_heading
     weight: 60000
-  - name: Workflows
+  - name: Workflow Automation
     url: service_management/workflows/
     pre: workflows
     identifier: workflows
