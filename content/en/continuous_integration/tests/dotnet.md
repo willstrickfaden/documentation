@@ -51,9 +51,9 @@ If you are using a Kubernetes executor, Datadog recommends using the [Datadog Ad
 
 If you are not using Kubernetes or can't use [Datadog Admission Controller][2] and the CI provider is using a container-based executor, set the `DD_TRACE_AGENT_URL` environment variable (which defaults to `http://localhost:8126`) in the build container running the tracer to an endpoint that is accessible from within that container. _Note that using `localhost` inside the build references the container itself and not the underlying worker node or any container where the Agent might be running_.
 
-`DD_TRACE_AGENT_URL` includes the protocol and port (for example, `http://localhost:8126`) and takes precedence over `DD_AGENT_HOST` and `DD_TRACE_AGENT_PORT`, and is the recommended configuration parameter to configure the Datadog Agent's URL for CI Visibility.
+`DD_TRACE_AGENT_URL` includes the protocol and port (for example, `http://localhost:8126`) and takes precedence over `DD_AGENT_HOST` and `DD_TRACE_AGENT_PORT`. `DD_TRACE_AGENT_URL` is the recommended configuration parameter to configure the Datadog Agent's URL for CI Visibility.
 
-If you still have issues connecting to the Datadog Agent, use the [Agentless Mode](?tab=cloudciprovideragentless#configuring-reporting-method). **Note**: by using this method, there will be no correlation between tests and infrastructure metrics.
+If you still have issues connecting to the Datadog Agent, use the [Agentless Mode](?tab=cloudciprovideragentless#configuring-reporting-method). **Note**: In Agentless Mode, there is no correlation between tests and infrastructure metrics.
 
 
 [1]: /agent/
@@ -184,7 +184,7 @@ To create filters or `group by` fields for these tags, you must first create fac
 
 When code coverage is available, the Datadog Tracer (v2.31.0+) reports it under the `test.code_coverage.lines_pct` tag for your test sessions.
 
-If you are using [Coverlet][14] to compute your code coverage, indicate the path to the report file in the `DD_CIVISIBILITY_EXTERNAL_CODE_COVERAGE_PATH` environment variable when running `dd-trace`. The report file must be in the OpenCover or Cobertura formats. Alternatively, you can enable the Datadog Tracer's built-in code coverage calculation with the env var `DD_CIVISIBILITY_CODE_COVERAGE_ENABLED=true`.
+If you are using [Coverlet][14] to compute your code coverage, indicate the path to the report file in the `DD_CIVISIBILITY_EXTERNAL_CODE_COVERAGE_PATH` environment variable when running `dd-trace`. The report file must be in the OpenCover or Cobertura formats. Alternatively, you can enable the Datadog Tracer's built-in code coverage calculation with the environment variable `DD_CIVISIBILITY_CODE_COVERAGE_ENABLED=true`.
 
 **Note**: When using Intelligent Test Runner, the tracer's built-in code coverage is enabled by default.
 
